@@ -8,15 +8,17 @@ namespace Chat
     internal sealed class Program
     {
         const string IP = "127.0.0.1";
-        //TCP const int  PORT = 8080;
 
-        //UDP
+        //TCP Test
+        //const int  PORT = 8080;
+
+        //UDP Test
         const int PORT = 8081;
 
         private static void Main()
         {
             ServerUDP();
-            //ServerTCP();
+          //ServerTCP();
         }
 
         private static void ServerUDP()
@@ -37,7 +39,7 @@ namespace Chat
                 do
                 {
                     size = udpSocet.ReceiveFrom(buffer, ref senderEndPoint);
-
+                  
                     data.Append(Encoding.UTF8.GetString(buffer));
                 }
                 while (udpSocet.Available > 0);
@@ -45,8 +47,6 @@ namespace Chat
                 udpSocet.SendTo(Encoding.UTF8.GetBytes("Сообщние получено!"), senderEndPoint);
 
                 Console.WriteLine(data);
-
-
             }
 
             //TODO: Off && Exit socet.
@@ -55,7 +55,7 @@ namespace Chat
         private static void ServerTCP()
         {
             var tcpEndPoint = new IPEndPoint(IPAddress.Parse(IP), PORT);
-            var tcpSocet = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+            var tcpSocet    = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
 
             tcpSocet.Bind(tcpEndPoint);
 
@@ -63,8 +63,8 @@ namespace Chat
 
             while (true)
             {
-                Socket listener = tcpSocet.Accept();
-                byte[] buffer = new byte[256];
+                var listener = tcpSocet.Accept();
+                var buffer   = new byte[256];
 
                 var size = 0;
                 var data = new StringBuilder();
@@ -74,7 +74,6 @@ namespace Chat
                     size = listener.Receive(buffer);
 
                     data.Append(Encoding.UTF8.GetString(buffer, 0, size));
-
                 }
                 while (listener.Available > 0);
 

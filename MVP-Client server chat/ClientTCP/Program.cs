@@ -8,15 +8,17 @@ namespace ClientTCP
     internal sealed class Program
     {
         const string IP = "127.0.0.1";
-        //TCP const int  PORT = 8080;
 
-        //UDP
+        //TCP Test
+        //const int  PORT = 8080;
+
+        //UDP Test
         const int PORT = 8082;
 
         static void Main()
         {
             ClientUDP();
-            //ClientTCP();
+          //ClientTCP();
         }
 
         private static void ClientUDP()
@@ -31,16 +33,18 @@ namespace ClientTCP
                 Console.WriteLine("Введите сообщение: ");
                 var message = Console.ReadLine();
 
-                //udpSocet.Send(Encoding.UTF8.GetBytes(message));
-
                 var serverEndPoint = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 8081);
-                udpSocet.SendTo(Encoding.UTF8.GetBytes("Сообщние получено!"), serverEndPoint);
+            
+                udpSocet.SendTo(Encoding.UTF8.GetBytes(message), serverEndPoint);
 
                 var buffer = new byte[256];
                 var size   = 0;
                 var data   = new StringBuilder();
 
-                EndPoint senderEndPoint = new IPEndPoint(IPAddress.Any, 0);
+                //#1 EndPoint senderEndPoint = new IPEndPoint(IPAddress.Any, 0);
+
+                //#2
+                EndPoint senderEndPoint = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 8081);
 
                 do
                 {
@@ -59,18 +63,18 @@ namespace ClientTCP
         private static void ClientTCP()
         {
             var tcpEndPoint = new IPEndPoint(IPAddress.Parse(IP), PORT);
-            var tcpSocet = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+            var tcpSocet    = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
 
             Console.WriteLine("Введите сообщение: ");
             var message = Console.ReadLine();
 
             var data = Encoding.UTF8.GetBytes(message);
+
             tcpSocet.Connect(tcpEndPoint);
             tcpSocet.Send(data);
 
-            byte[] buffer = new byte[256];
-
-            var size = 0;
+            var buffer = new byte[256];
+            var size   = 0;
             var answer = new StringBuilder();
 
             do
