@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\NamespaceCSharp\\Client server chat\\MVP-Client server chat\\Chat\\Chat.csproj",
-      "projectName": "Chat",
-      "projectPath": "F:\\NamespaceCSharp\\Client server chat\\MVP-Client server chat\\Chat\\Chat.csproj",
+      "projectUniqueName": "F:\\NamespaceCSharp\\Client server chat\\MVP-Client server chat\\Chat\\ServerTCP.csproj",
+      "projectName": "ServerTCP",
+      "projectPath": "F:\\NamespaceCSharp\\Client server chat\\MVP-Client server chat\\Chat\\ServerTCP.csproj",
       "packagesPath": "C:\\Users\\Rimutu\\.nuget\\packages\\",
       "outputPath": "F:\\NamespaceCSharp\\Client server chat\\MVP-Client server chat\\Chat\\obj\\",
       "projectStyle": "PackageReference",
