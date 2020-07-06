@@ -4,7 +4,6 @@ F:\NamespaceCSharp\Client server chat\MVP-Client server chat\Chat\bin\Debug\netc
 F:\NamespaceCSharp\Client server chat\MVP-Client server chat\Chat\bin\Debug\netcoreapp3.1\ServerTCP.runtimeconfig.dev.json
 F:\NamespaceCSharp\Client server chat\MVP-Client server chat\Chat\bin\Debug\netcoreapp3.1\ServerTCP.dll
 F:\NamespaceCSharp\Client server chat\MVP-Client server chat\Chat\bin\Debug\netcoreapp3.1\ServerTCP.pdb
-F:\NamespaceCSharp\Client server chat\MVP-Client server chat\Chat\obj\Debug\netcoreapp3.1\ServerTCP.csprojAssemblyReference.cache
 F:\NamespaceCSharp\Client server chat\MVP-Client server chat\Chat\obj\Debug\netcoreapp3.1\ServerTCP.AssemblyInfoInputs.cache
 F:\NamespaceCSharp\Client server chat\MVP-Client server chat\Chat\obj\Debug\netcoreapp3.1\ServerTCP.AssemblyInfo.cs
 F:\NamespaceCSharp\Client server chat\MVP-Client server chat\Chat\obj\Debug\netcoreapp3.1\ServerTCP.csproj.CoreCompileInputs.cache

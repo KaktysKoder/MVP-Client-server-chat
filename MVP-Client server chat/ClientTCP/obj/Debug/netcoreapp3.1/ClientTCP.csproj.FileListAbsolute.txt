@@ -1,0 +1,13 @@
+F:\NamespaceCSharp\Client server chat\MVP-Client server chat\ClientTCP\bin\Debug\netcoreapp3.1\ClientTCP.exe
+F:\NamespaceCSharp\Client server chat\MVP-Client server chat\ClientTCP\bin\Debug\netcoreapp3.1\ClientTCP.deps.json
+F:\NamespaceCSharp\Client server chat\MVP-Client server chat\ClientTCP\bin\Debug\netcoreapp3.1\ClientTCP.runtimeconfig.json
+F:\NamespaceCSharp\Client server chat\MVP-Client server chat\ClientTCP\bin\Debug\netcoreapp3.1\ClientTCP.runtimeconfig.dev.json
+F:\NamespaceCSharp\Client server chat\MVP-Client server chat\ClientTCP\bin\Debug\netcoreapp3.1\ClientTCP.dll
+F:\NamespaceCSharp\Client server chat\MVP-Client server chat\ClientTCP\bin\Debug\netcoreapp3.1\ClientTCP.pdb
+F:\NamespaceCSharp\Client server chat\MVP-Client server chat\ClientTCP\obj\Debug\netcoreapp3.1\ClientTCP.csprojAssemblyReference.cache
+F:\NamespaceCSharp\Client server chat\MVP-Client server chat\ClientTCP\obj\Debug\netcoreapp3.1\ClientTCP.AssemblyInfoInputs.cache
+F:\NamespaceCSharp\Client server chat\MVP-Client server chat\ClientTCP\obj\Debug\netcoreapp3.1\ClientTCP.AssemblyInfo.cs
+F:\NamespaceCSharp\Client server chat\MVP-Client server chat\ClientTCP\obj\Debug\netcoreapp3.1\ClientTCP.csproj.CoreCompileInputs.cache
+F:\NamespaceCSharp\Client server chat\MVP-Client server chat\ClientTCP\obj\Debug\netcoreapp3.1\ClientTCP.dll
+F:\NamespaceCSharp\Client server chat\MVP-Client server chat\ClientTCP\obj\Debug\netcoreapp3.1\ClientTCP.pdb
+F:\NamespaceCSharp\Client server chat\MVP-Client server chat\ClientTCP\obj\Debug\netcoreapp3.1\ClientTCP.genruntimeconfig.cache
